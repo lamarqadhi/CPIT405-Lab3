@@ -208,4 +208,172 @@ footer {
         display: block;
         text-align: center;
     }
+
+
 }
+
+/* =========================
+   Lab 5 - Interactive Features
+   ========================= */
+
+/* New buttons */
+button {
+    background-color: #5b3a72;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #8e6aa8;
+}
+
+/* Header buttons */
+.header-buttons {
+    margin-top: 15px;
+}
+
+/* About section */
+#more-about {
+    margin-top: 10px;
+}
+
+/* Project filters */
+.project-filters {
+    margin-bottom: 20px;
+}
+
+/* Generated project cards */
+.project-card {
+    background-color: #fffaf3;
+    border: 1px solid #d8c8d9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    color: #5b3a72;
+}
+
+.project-category {
+    color: #8e6aa8;
+    font-weight: bold;
+}
+
+/* =========================
+   Dark Mode
+   ========================= */
+
+body.dark-mode {
+    background-color: #241d2b;
+    color: #f5efe6;
+}
+
+body.dark-mode #profile-header,
+body.dark-mode footer {
+    background-color: #17121d;
+}
+
+body.dark-mode .cv-section {
+    background-color: #352b3e;
+    border-color: #5b4869;
+}
+
+body.dark-mode .cv-section h2,
+body.dark-mode .education-item h3,
+body.dark-mode .project-card h3 {
+    color: #e0c4f0;
+}
+
+body.dark-mode .project-card {
+    background-color: #41334b;
+    border-color: #705b80;
+}
+
+body.dark-mode .project-category {
+    color: #d6b4ed;
+}
+
+body.dark-mode .project-card a,
+body.dark-mode #contact a {
+    color: #d6b4ed;
+}
+
+body.dark-mode .skills-list li {
+    background-color: #705080;
+    color: white;
+}
+
+body.dark-mode .education-item {
+    border-left-color: #b18acb;
+}
+
+body.dark-mode button {
+    background-color: #8e6aa8;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: #a987c0;
+}
+
+/* =========================
+   Print / Save as PDF
+   ========================= */
+
+@media print {
+
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12pt;
+    }
+
+    #profile-header {
+        background-color: white;
+        color: black;
+        padding: 15px;
+    }
+
+    nav,
+    .header-buttons,
+    .project-filters,
+    #about-toggle {
+        display: none;
+    }
+
+    .cv-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .cv-section,
+    .project-card {
+        background-color: white;
+        color: black;
+        border: 1px solid #ccc;
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .cv-section h2,
+    .project-card h3 {
+        color: black;
+    }
+
+    footer {
+        background-color: white;
+        color: black;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+

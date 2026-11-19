@@ -13,6 +13,11 @@
         <h1>Lamar Qadhi</h1>
         <p class="job-title">Information Technology Student</p>
 
+        <div class="header-buttons">
+            <button id="theme-toggle">Switch to Dark Mode</button>
+            <button id="print-button">Print / Save as PDF</button>
+        </div>
+
         <nav>
             <a href="#about">About</a>
             <a href="#education">Education</a>
@@ -27,9 +32,15 @@
         <section id="about" class="cv-section">
             <h2>About Me</h2>
             <p>
-                Write a short introduction about yourself, your interests,
-                and your career goals.
+                I am an Information Technology student at King Abdulaziz University.          
             </p>
+
+            <div id="more-about" hidden>
+                <p>
+                    I'm interested in software engineering and development, artificial intelligence, and UX/UI design
+                </p>
+            </div>
+            <button id="about-toggle">Show More</button>
         </section>
 
         <section id="education" class="cv-section">
@@ -56,11 +67,12 @@
         <section id="projects" class="cv-section">
             <h2>Projects</h2>
 
-            <article class="project-card">
-                <h3>Project Title</h3>
-                <p>Add a short description of your project.</p>
-                <a href="#">View Project</a>
-            </article>
+            <div class="project-filters">
+                <button class="filter-button" data-category="All">All</button>
+                <button class="filter-button" data-category="Web">Web</button>
+                <button class="filter-button" data-category="Programming">Programming</button>
+            </div>
+            <div id="project-list"></div>
         </section>
 
         <section id="contact" class="cv-section">
@@ -87,6 +99,6 @@
     <footer>
         <p>© 2026 Lamar Qadhi</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
